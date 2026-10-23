@@ -44,7 +44,7 @@ olympics-data-analysis/
 │   ├── Olympics_Final_Presentation.pdf
 │   └── [editable PowerPoint files, if included]
 ├── 06_Video_Presentation/
-│   └── README.md (video link, if hosted externally)
+│   └── README.md
 ├── .gitignore
 └── README.md
 ```

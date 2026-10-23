@@ -1,0 +1,548 @@
+====================================================================================================
+Schema : public
+Table  : city
+Rows   : 42
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. city_name                           character varying
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 42
+NULLs : 0
+Distinct: 42
+Min   : 1.0
+Max   : 42.0
+Mean  : 21.5
+Median: 21.5
+Stddev: 12.267844146385297
+
+Column: city_name
+Type  : character varying
+Count : 42
+NULLs : 0
+Distinct: 42
+Min length: 4.0
+Max length: 22.0
+Avg length: 8.619047619047619
+Examples:
+  Sydney
+  St. Louis
+  Albertville
+  Montreal
+  Sapporo
+
+
+====================================================================================================
+Schema : public
+Table  : competitor_event
+Rows   : 260,971
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. event_id                            integer
+ 2. competitor_id                       integer
+ 3. medal_id                            integer
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: event_id
+Type  : integer
+Count : 260,971
+NULLs : 0
+Distinct: 757
+Min   : 1.0
+Max   : 757.0
+Mean  : 181.71619835154098
+Median: 143.0
+Stddev: 150.689373544928
+
+Column: competitor_id
+Type  : integer
+Count : 260,971
+NULLs : 0
+Distinct: 180,252
+Min   : 1.0
+Max   : 180252.0
+Mean  : 90443.171927149
+Median: 90254.0
+Stddev: 51916.81855662
+
+Column: medal_id
+Type  : integer
+Count : 260,971
+NULLs : 0
+Distinct: 4
+Min   : 1.0
+Max   : 4.0
+Mean  : 3.7019017438719244
+Median: 4.0
+Stddev: 0.77999090705715
+
+
+====================================================================================================
+Schema : public
+Table  : event
+Rows   : 757
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. sport_id                            integer
+ 3. event_name                          character varying
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 757
+NULLs : 0
+Distinct: 757
+Min   : 1.0
+Max   : 757.0
+Mean  : 379.0
+Median: 379.0
+Stddev: 218.671366819405
+
+Column: sport_id
+Type  : integer
+Count : 757
+NULLs : 0
+Distinct: 66
+Min   : 1.0
+Max   : 66.0
+Mean  : 32.10568031704095
+Median: 28.0
+Stddev: 20.352175292088308
+
+Column: event_name
+Type  : character varying
+Count : 757
+NULLs : 0
+Distinct: 757
+Min length: 15.0
+Max length: 85.0
+Avg length: 35.04755614266843
+Examples:
+  Taekwondo Men's Featherweight
+  Art Competitions Mixed Architecture
+  Cycling Men's Omnium
+  Athletics Women's 5,000 metres
+  Judo Men's Lightweight
+
+
+====================================================================================================
+Schema : public
+Table  : games
+Rows   : 51
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. games_year                          integer
+ 3. games_name                          character varying
+ 4. season                              character varying
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 51
+NULLs : 0
+Distinct: 51
+Min   : 1.0
+Max   : 51.0
+Mean  : 26.0
+Median: 26.0
+Stddev: 14.866068747318506
+
+Column: games_year
+Type  : integer
+Count : 51
+NULLs : 0
+Distinct: 35
+Min   : 1896.0
+Max   : 2016.0
+Mean  : 1963.2549019607843
+Median: 1968.0
+Stddev: 34.35802272381512
+
+Column: games_name
+Type  : character varying
+Count : 51
+NULLs : 0
+Distinct: 51
+Min length: 11.0
+Max length: 11.0
+Avg length: 11.0
+Examples:
+  1908 Summer
+  2016 Summer
+  2010 Winter
+  1906 Summer
+  1960 Winter
+
+Column: season
+Type  : character varying
+Count : 51
+NULLs : 0
+Distinct: 2
+Min length: 6.0
+Max length: 6.0
+Avg length: 6.0
+Examples:
+  Winter
+  Summer
+
+
+====================================================================================================
+Schema : public
+Table  : games_city
+Rows   : 52
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. games_id                            integer
+ 2. city_id                             integer
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: games_id
+Type  : integer
+Count : 52
+NULLs : 0
+Distinct: 51
+Min   : 1.0
+Max   : 51.0
+Mean  : 26.134615384615383
+Median: 26.5
+Stddev: 14.7515753178762
+
+Column: city_id
+Type  : integer
+Count : 52
+NULLs : 0
+Distinct: 42
+Min   : 1.0
+Max   : 42.0
+Mean  : 20.134615384615383
+Median: 20.0
+Stddev: 12.42550957041459
+
+
+====================================================================================================
+Schema : public
+Table  : games_competitor
+Rows   : 180,252
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. games_id                            integer
+ 3. person_id                           integer
+ 4. age                                 integer
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 180,252
+NULLs : 0
+Distinct: 180,252
+Min   : 1.0
+Max   : 180252.0
+Mean  : 90126.5
+Median: 90126.5
+Stddev: 52034.41469835
+
+Column: games_id
+Type  : integer
+Count : 180,252
+NULLs : 0
+Distinct: 51
+Min   : 1.0
+Max   : 51.0
+Mean  : 21.01322038035639
+Median: 21.0
+Stddev: 11.940894873470286
+
+Column: person_id
+Type  : integer
+Count : 180,252
+NULLs : 0
+Distinct: 128,854
+Min   : 1.0
+Max   : 135571.0
+Mean  : 68053.14775980295
+Median: 68102.0
+Stddev: 39090.51083809
+
+Column: age
+Type  : integer
+Count : 180,252
+NULLs : 0
+Distinct: 74
+Min   : 10.0
+Max   : 97.0
+Mean  : 25.783342209795176
+Median: 25.0
+Stddev: 6.096013431834454
+
+
+====================================================================================================
+Schema : public
+Table  : medal
+Rows   : 4
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. medal_name                          character varying
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 4
+NULLs : 0
+Distinct: 4
+Min   : 1.0
+Max   : 4.0
+Mean  : 2.5
+Median: 2.5
+Stddev: 1.2909944487358056
+
+Column: medal_name
+Type  : character varying
+Count : 3
+NULLs : 1
+Distinct: 3
+Min length: 4.0
+Max length: 6.0
+Avg length: 5.333333333333333
+Examples:
+  Silver
+  Bronze
+  Gold
+
+
+====================================================================================================
+Schema : public
+Table  : noc_region
+Rows   : 231
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. noc                                 character varying
+ 3. region_name                         character varying
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 231
+NULLs : 0
+Distinct: 231
+Min   : 1.0
+Max   : 256.0
+Mean  : 116.10822510822511
+Median: 116.0
+Stddev: 67.03510742667328
+
+Column: noc
+Type  : character varying
+Count : 231
+NULLs : 0
+Distinct: 231
+Min length: 3.0
+Max length: 3.0
+Avg length: 3.0
+Examples:
+  PLW
+  UAE
+  SIN
+  ALG
+  NEP
+
+Column: region_name
+Type  : character varying
+Count : 231
+NULLs : 0
+Distinct: 230
+Min length: 2.0
+Max length: 32.0
+Avg length: 8.965367965367966
+Examples:
+  Bangladesh
+  Venezuela
+  Luxembourg
+  Czech Republic
+  Sweden
+
+
+====================================================================================================
+Schema : public
+Table  : person
+Rows   : 128,854
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. full_name                           character varying
+ 3. gender                              character varying
+ 4. height                              integer
+ 5. weight                              integer
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 128,854
+NULLs : 0
+Distinct: 128,854
+Min   : 1.0
+Max   : 135571.0
+Mean  : 67885.37838173436
+Median: 67845.5
+Stddev: 39120.37570975
+
+Column: full_name
+Type  : character varying
+Count : 128,854
+NULLs : 0
+Distinct: 128,081
+Min length: 4.0
+Max length: 108.0
+Avg length: 19.264826858304748
+Examples:
+  Roel Hubertus Braas
+  Robert Earl "Bob"" McMillen"
+  Mikko Ilmari Salminen
+  Ricardo Burgos Spangen
+  Diego Mularoni
+
+Column: gender
+Type  : character varying
+Count : 128,854
+NULLs : 0
+Distinct: 2
+Min length: 1.0
+Max length: 1.0
+Avg length: 1.0
+Examples:
+  M
+  F
+
+Column: height
+Type  : integer
+Count : 128,854
+NULLs : 0
+Distinct: 95
+Min   : 0.0
+Max   : 226.0
+Mean  : 137.88732208546105
+Median: 172.0
+Stddev: 73.38357514025337
+
+Column: weight
+Type  : integer
+Count : 128,854
+NULLs : 0
+Distinct: 143
+Min   : 0.0
+Max   : 214.0
+Mean  : 55.73367532245798
+Median: 66.0
+Stddev: 32.7046425125132
+
+
+====================================================================================================
+Schema : public
+Table  : person_region
+Rows   : 130,521
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. person_id                           integer
+ 2. region_id                           integer
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: person_id
+Type  : integer
+Count : 130,521
+NULLs : 0
+Distinct: 128,854
+Min   : 1.0
+Max   : 135571.0
+Mean  : 67945.02016533738
+Median: 67881.0
+Stddev: 39117.38067655
+
+Column: region_id
+Type  : integer
+Count : 130,521
+NULLs : 0
+Distinct: 228
+Min   : 1.0
+Max   : 256.0
+Mean  : 112.37377893212586
+Median: 101.0
+Stddev: 66.23102037737641
+
+
+====================================================================================================
+Schema : public
+Table  : sport
+Rows   : 66
+----------------------------------------------------------------------------------------------------
+COLUMNS
+----------------------------------------------------------------------------------------------------
+ 1. id                                  integer
+ 2. sport_name                          character varying
+
+STATISTICS
+----------------------------------------------------------------------------------------------------
+
+Column: id
+Type  : integer
+Count : 66
+NULLs : 0
+Distinct: 66
+Min   : 1.0
+Max   : 66.0
+Mean  : 33.5
+Median: 33.5
+Stddev: 19.196353820452465
+
+Column: sport_name
+Type  : character varying
+Count : 66
+NULLs : 0
+Distinct: 66
+Min length: 4.0
+Max length: 25.0
+Avg length: 10.181818181818182
+Examples:
+  Archery
+  Nordic Combined
+  Lacrosse
+  Gymnastics
+  Baseball
+
+

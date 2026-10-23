@@ -42,7 +42,6 @@ olympics-data-analysis/
 ├── 05_Presentations/
 │   ├── Olympics_Rough_Presentation.pdf
 │   ├── Olympics_Final_Presentation.pdf
-│   └── [editable PowerPoint files, if included]
 ├── 06_Video_Presentation/
 │   └── README.md
 ├── .gitignore

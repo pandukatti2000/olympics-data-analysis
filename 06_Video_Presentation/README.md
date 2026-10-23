@@ -5,4 +5,4 @@ This folder contains information about the final video presentation for the Olym
 
 The video is hosted externally because of its file size.
 
-**Watch the presentation:** [Open video](PASTE_YOUR_VIDEO_LINK_HERE)
+**Watch the presentation:** [Open video](https://drive.google.com/file/d/1xKmO4P00kuTUtaiSrPinAyMxj9RpRXuS/view?usp=drive_link)
